@@ -13,4 +13,4 @@
 npm install
 ```
 ## Author :black_nib: :computer:
-- [Thamara Ramos Deffitt] (https://www.linkedin.com/in/thamara-ramos-deffitt/)
+- [Thamara Ramos Deffitt](https://www.linkedin.com/in/thamara-ramos-deffitt/)

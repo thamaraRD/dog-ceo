@@ -1,59 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&family=Kumbh+Sans:wght@400;700&family=Mochiy+Pop+P+One&family=Pacifico&family=Red+Hat+Display:wght@500;700;900&family=Roboto+Condensed:ital,wght@0,700;1,400&family=Roboto:ital,wght@0,500;1,400&family=Rubik+Beastly&family=Rubik:wght@400;500&family=Shadows+Into+Light&family=Source+Code+Pro&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&family=Kumbh+Sans:wght@400;700&family=Mochiy+Pop+P+One&family=Pacifico&family=Red+Hat+Display:wght@500;700;900&family=Roboto+Condensed:ital,wght@0,700;1,400&family=Roboto:ital,wght@0,500;1,400&family=Rubik+Beastly&family=Rubik:wght@400;500&family=Shadows+Into+Light&family=Source+Code+Pro&display=swap");
 
-*{
-  background-color: gainsboro;
-  font-family: 'Ubuntu', sans-serif;
+* {
+  font-family: "Ubuntu", sans-serif;
   box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-input {
-  background-color: white;
-  border-radius: 5px;
-  border: 1px solid rgb(32, 63, 155);
-  color: black;
-  font-size: 1.2rem;
-  outline: none;
-  padding: 10px 15px;
-  width: 50%;
-}
-
-.card-grid {
+.container-css {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.card {
-  align-content: center;
-  align-items: center;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.03);
-  display: flex;
-  flex-direction: column;
-  height: 0%;  
-  justify-content: center;
-  margin-bottom: 20px;
-  margin-right: 20px;
-  overflow: hidden;
-}
-
-.card p {
-  background-color: white;
-  flex: 1;
-  font-size: 1.5rem;
-  margin-top: 5px;
-  padding: 5px 20px 0px 20px;
+  margin-top: 30px;
   text-align: center;
 }
 
-.card img {
+.card-grid img {
+  width: 23%;
+  margin: 0 0 15px 15px;
+  border-radius: 25%;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.selectList {
   width: 100%;
 }
 
-.selectList{
-  width: 100%;
+.redLetter {
+  color: red;
 }

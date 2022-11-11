@@ -3,11 +3,10 @@ export const title = {
 };
 
 export const description = {
-  INTRO_DESCRIPTION:
-    "¡kdfjkldsvkdnfklvnlkfnvmkl!",
+  INTRO_DESCRIPTION: "Fotos de Perritos Lindos",
+  INFO_DESCRIPTION: 'AÚN NO HAY UNA RAZA SELECCIONADA 😞'
 };
 
 export const footer = {
-
-  FOOTER_DESCRIPTION: 'lsfjgirjfirj'
-}
+  FOOTER_DESCRIPTION: "Hecho por: Thamara Ramos",
+};

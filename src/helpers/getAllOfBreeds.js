@@ -1,7 +1,7 @@
 const baseUrl = 'https://dog.ceo/api/';
 
 export const getBreed = async () => {
-  const url = `${baseUrl}breeds/list/all`
+  const url = `${baseUrl}breeds/list/all`;
   const resp = await fetch(url);
   const data = await resp.json();
   const breed = Object.keys(data.message);

@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test on <Footer /> should match the snapshot  1`] = `
+<div>
+  <div
+    class="fixed-bottom footer"
+  >
+    <div
+      class="row"
+    >
+      <div
+        class="col-md-12 p-0 mt-6"
+      >
+        <p
+          class=" bg-danger text-dark text-center p-0 m-0"
+        >
+          Hecho por: Thamara Ramos
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

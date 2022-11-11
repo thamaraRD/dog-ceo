@@ -1,3 +1,4 @@
+import PropTypes  from "prop-types";
 import { useEffect, useState } from "react";
 import { Select } from "antd";
 import { getBreed } from "../helpers/getAllOfBreeds";
@@ -8,32 +9,23 @@ export const GetBreedList = () => {
   const [breedDog, setBreedDog] = useState([]);
   const [dogImage, setDogImage] = useState([]);
   
-
-  
   useEffect(() => {
     getBreed().then((data) => {
       setBreedDog(data);
     });
   }, []);
 
-
-
   const handleChange = (value) => {
 
     setDogImage(value);
   };
-
-  // useEffect(() => {
-  //   setValue(['pug'])
-  // }, [])
-  
 
   const { Option } = Select;
 
   return (
     <>
       <Select className="selectList"
-        placeholder="Seleccione una raza"
+        placeholder="Seleccione una raza o escríbala ..."
         size="large"
         showSearch
         optionFilterProp="children"
@@ -50,4 +42,18 @@ export const GetBreedList = () => {
       <GetDogImage dogImage={dogImage} />
     </>
   );
+};
+
+GetBreedList.prototypes = {
+  placeholder: PropTypes.string,
+  className: PropTypes.string,
+  onChange: PropTypes.func.isRequired,
+  value: PropTypes.oneOfType([PropTypes.string]),
+  size: PropTypes.string,
+  mode: PropTypes.string.isRequired,
+
+};
+
+GetBreedList.defaultProps = {
+  mode: 'multiple'
 };

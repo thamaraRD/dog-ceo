@@ -3,7 +3,7 @@
 
 ### Un proyecto de Javascript con React. :ballot_box_with_check:
 
- Tiene por principal función listar todas las razas de perros, reconocidas a nivel mundial, mostrando imagenes asociadas, consumiendo la API https://dog.ceo/dog-api/.
+ Tiene por principal función listar todas las razas de perros reconocidas a nivel mundial, mostrando imágenes asociadas, consumiendo la API https://dog.ceo/dog-api/.
 
  ## Installing :bookmark_tabs:
 - Crear carpeta en donde quieres que esté el proyecto

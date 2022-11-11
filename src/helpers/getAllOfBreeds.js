@@ -11,7 +11,6 @@ export const getBreed = async () => {
 export const getImageBreed = async (breed) =>{
   const url = `${baseUrl}breed/${breed}/images`;
   const resp = await fetch(url);
-  console.log(resp)
   const images  = await resp.json();
   return images.message;
 };

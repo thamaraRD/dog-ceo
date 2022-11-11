@@ -1,29 +1,24 @@
 /* eslint-disable no-unused-expressions */
-import { useState } from "react";
+import { useCallback, useEffect } from "react";
+import { getBreed } from "../helpers/getAllOfBreeds";
 
-export const GetBreed = ({ onNewValue }) => {
-  const [ inputValue, setInputValue ] = useState('');
+export const GetBreed = ({ loadBreed }) => {
+ 
 
-  const onInputChange = ({ target }) =>{
-    setInputValue(target.value);
-  };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const loadBreedHandle = useCallback(async(loadBreed) =>{
+    const data = await getBreed();
+    loadBreed(data)
+  })
   
-  const onSubmit = (e) => {
-    e.preventDefault();
+  useEffect(() => {
+    loadBreedHandle(loadBreed)
+  }, [loadBreedHandle])
+  
 
-    const newInputValue = inputValue.trim();
-    newInputValue.length <= 0 ? null : onNewValue(newInputValue);
-    setInputValue('');
-  };
-
-  return (
-    <form onSubmit={onSubmit}>
-      <input
-      type='text'
-      placeholder="¿Que Raza buscas?"
-      value={inputValue}
-      onChange={onInputChange}
-      />
-    </form>
+  return(
+    <div>
+      
+    </div>
   )
 };
